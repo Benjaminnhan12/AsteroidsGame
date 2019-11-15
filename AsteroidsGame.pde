@@ -23,8 +23,7 @@ Spaceship bob = new Spaceship();
 public void keyPressed()
 {
 	if(key == 'h')
-  	{
-  		bob.setDirectionX(0);
+  {
+  		bob.setDirectionX((double)(0));
 	}
 }
-

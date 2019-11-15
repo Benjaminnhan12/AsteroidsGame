@@ -14,6 +14,7 @@ class Spaceship extends Floater
 
   public void setDirectionX(double x)
   {
-  	//myDirectionX;
+  	myCenterY =(int)(Math.random()*1000);
+  	myCenterX =(int)(Math.random()*600);
   }
 }
