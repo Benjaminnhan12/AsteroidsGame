@@ -1,9 +1,10 @@
 Spaceship ok = new Spaceship();
-Star[] dots = new Star[300];
+Star[] dots = new Star[400];
 public void setup() 
 {
   //your code here
-  size(1000,600);
+  size(1200,800);
+  background(30);
   for(int i = 0; i<dots.length;i++)
   {
   	dots[i] =  new Star();
@@ -19,11 +20,11 @@ public void draw()
   	dots[i].show();
   }
 }
-Spaceship bob = new Spaceship();
 public void keyPressed()
 {
 	if(key == 'h')
   {
-  		bob.setDirectionX((double)(0));
+  		ok.setHyperSpace((Math.random()));
+      background(30);
 	}
 }
