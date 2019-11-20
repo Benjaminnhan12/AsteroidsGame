@@ -8,8 +8,8 @@ class Spaceship extends Floater
   	yCorners = new int[]{-8,0,8,0};
   	myDirectionX = 0;
   	myDirectionY = 0;
-  	myPointDirection = 0;
-  	myColor = (200);
+  	myPointDirection = 90;
+  	myColor = 200;
   	myCenterX = 600;
   	myCenterY = 400;
   }
