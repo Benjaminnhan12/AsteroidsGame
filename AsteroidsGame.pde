@@ -27,8 +27,8 @@ public void keyPressed()
 	if(key == 'h')
   {
   		ok.setHyperSpace((Math.random()));
-      ok.myDirectionX = 0;
-      ok.myDirectionY = 0;
+      ok.setDirectionX(0);
+      ok.setDirectionY(0);
 	}
   if(key == 'a')
   {
