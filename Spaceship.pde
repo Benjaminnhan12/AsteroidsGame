@@ -32,7 +32,7 @@ class Spaceship extends Floater
 
   // public void setY(double y){myDirectionY = y;}
   // public double getY(){return myDirectionY;}
-
+  
   // public void setY(double y){myDirectionY = y;}
   // public double getY(){return myDirectionY;}
 
