@@ -1,5 +1,5 @@
 Spaceship ok = new Spaceship();
-Asteroid[] big = new Asteroid[100];
+Asteroid[] big = new Asteroid[30];
 Star[] dots = new Star[400];
 public void setup() 
 {
@@ -22,6 +22,10 @@ public void draw()
   ok.show();
   ok.move();
   noStroke();
+  for(int i = 0; i<big.length;i++)
+  {
+    big[i].move();
+  }
   for(int i = 0; i<dots.length;i++)
   {
   	dots[i].show();
