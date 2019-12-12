@@ -1,7 +1,8 @@
 Spaceship ok = new Spaceship();
 Asteroid[] big = new Asteroid[30];
 Star[] dots = new Star[400];
-Bullet zoom = new Bullet(ok);
+// Bullet[] zoom = new Bullet[];
+ArrayList <Bullet> zoom = new ArrayList <Bullet>();
 public void setup() 
 {
   //your code here
@@ -22,7 +23,6 @@ public void draw()
   background(30);
   ok.show();
   ok.move();
-  zoom.show();
   noStroke();
   for(int i = 0; i<big.length;i++)
   {
@@ -36,6 +36,10 @@ public void draw()
   {
     big[i].show();
   }
+  // for(int i = 0; i<zoom.length;i++)
+  // {
+  //   zoom[i].show();
+  // }
 }
 public void keyPressed()
 {
@@ -61,5 +65,7 @@ public void keyPressed()
   {
     ok.accelerate(-1);
   }
-  // if(key == 'k'){}
+  if(key == 'k'){
+    zoom.add(new Bullet(ok));
+  }
 }
