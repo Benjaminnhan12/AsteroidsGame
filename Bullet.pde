@@ -15,7 +15,12 @@ class Bullet extends Floater
 
   		public void show()
   		{
-  			super.show();
+  			ellipse((float)myCenterX, (float)myCenterY, (float)3, (float)10);
+        println(myCenterX+". "+myCenterY);
   			fill(100);
   		}
+      public void move()
+      {
+        super.move();
+      }
 }
