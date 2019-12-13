@@ -6,7 +6,6 @@ ArrayList <Asteroid> big = new ArrayList <Asteroid>();
 ArrayList <Bullet> zoom = new ArrayList <Bullet>();
 public void setup() 
 {
-  //your code here
   size(1200,800);
   background(30);
   for(int i = 0; i<dots.length;i++)
@@ -20,15 +19,11 @@ public void setup()
 }
 public void draw() 
 {
-  //your code here
   background(30);
   ok.show();
   ok.move();
   noStroke();
-  for(int i = 0; i<big.size();i++)
-  {
-    big.get(i).move();
-  }
+ 
   for(int i = 0; i<dots.length;i++)
   {
   	dots[i].show();
@@ -41,6 +36,14 @@ public void draw()
   for(int ii = 0; ii<zoom.size(); ii++)
   {
     zoom.get(ii).show();
+  }
+  for(int ii = 0; ii<zoom.size(); ii++)
+  {
+      zoom.get(ii).move();
+  }
+  for(int i = 0; i<big.size();i++)
+  {
+    big.get(i).move();
   }
 }
 public void keyPressed()
